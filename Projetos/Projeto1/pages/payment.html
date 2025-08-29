@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forma de Pagamento - SUPER</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <div class="logo-circle"></div>
+                </div>
+                <h1>SUPER</h1>
+            </div>
+            <nav>
+                <a href="../index.html">Início</a>
+                <a href="cart.html">Carrinho (<span id="cart-count">0</span>)</a>
+                <a href="orders.html">Pedidos</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="hero">
+                <h2>Forma de Pagamento</h2>
+                <p>Escolha como deseja pagar seu pedido</p>
+            </section>
+
+            <div class="payment-options">
+                <div class="payment-option" data-method="pix">
+                    <div class="payment-icon pix-icon">PIX</div>
+                    <div>
+                        <h3>Pix</h3>
+                        <p>Pagamento instantâneo via QR Code</p>
+                    </div>
+                </div>
+
+                <div class="payment-option" data-method="cartao">
+                    <div class="payment-icon card-icon">💳</div>
+                    <div>
+                        <h3>Cartão débito / Crédito</h3>
+                        <p>Pagamento seguro com cartão</p>
+                    </div>
+                </div>
+
+                <div class="payment-option" data-method="dinheiro">
+                    <div class="payment-icon cash-icon">💵</div>
+                    <div>
+                        <h3>Dinheiro</h3>
+                        <p>Pagamento na entrega em dinheiro</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center;">
+                <button id="checkout-btn" class="btn-primary" style="min-width: 200px;">Continuar</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 SUPER. Todos os direitos reservados.</p>
+            <a href="terms.html">Termos de Uso</a>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html> 

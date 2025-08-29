@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPER - Delivery</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <div class="logo-circle"></div>
+                </div>
+                <h1>SUPER</h1>
+            </div>
+            <nav>
+                <a href="pages/cart.html">Carrinho (<span id="cart-count">0</span>)</a>
+                <a href="pages/orders.html">Pedidos</a>
+                <a href="login.html">Login</a>
+                <a href="pages/signup.html">Cadastrar</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="hero">
+                <h2>Cardápio</h2>
+                <p>Escolha seus pratos favoritos e faça seu pedido!</p>
+            </section>
+
+            <section class="menu">
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=300&h=200&fit=crop" alt="Hambúrguer">
+                    <div class="item-info">
+                        <h3>Hambúrguer Artesanal</h3>
+                        <p>Hambúrguer suculento com queijo, alface, tomate e molho especial</p>
+                        <div class="price">R$ 18,99</div>
+                        <button class="add-to-cart" onclick="addToCart('Hambúrguer Artesanal', 18.99, 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=300&h=200&fit=crop')">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=300&h=200&fit=crop" alt="Batata Frita">
+                    <div class="item-info">
+                        <h3>Batata Frita Especial</h3>
+                        <p>Batatas crocantes temperadas com ervas finas e acompanha molho</p>
+                        <div class="price">R$ 8,99</div>
+                        <button class="add-to-cart" onclick="addToCart('Batata Frita Especial', 8.99, 'https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=300&h=200&fit=crop')">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1632778149955-e80f8ceca2e8?w=300&h=200&fit=crop" alt="Filé à Parmegiana">
+                    <div class="item-info">
+                        <h3>Filé à Parmegiana</h3>
+                        <p>Filé coberto com queijo derretido e molho de tomate especial</p>
+                        <div class="price">R$ 24,99</div>
+                        <button class="add-to-cart" onclick="addToCart('Filé à Parmegiana', 24.99, 'https://images.unsplash.com/photo-1632778149955-e80f8ceca2e8?w=300&h=200&fit=crop')">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 SUPER. Todos os direitos reservados.</p>
+            <a href="pages/terms.html">Termos de Uso</a>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 

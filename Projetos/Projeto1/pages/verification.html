@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Código de verificação - SUPER</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <div class="logo-circle"></div>
+                </div>
+                <h1>SUPER</h1>
+            </div>
+            <nav>
+                <a href="../index.html">Início</a>
+                <a href="cart.html">Carrinho (<span id="cart-count">0</span>)</a>
+                <a href="orders.html">Pedidos</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="form-container">
+                <h2>Código de verificação</h2>
+                <p style="text-align: center; color: #666; margin-bottom: 2rem;">
+                    Digite o código de 6 dígitos que enviamos para seu e-mail
+                </p>
+                
+                <form id="verification-form">
+                    <div class="form-group">
+                        <label for="code">Código</label>
+                        <input type="text" id="code" name="code" maxlength="6" pattern="[0-9]{6}" placeholder="000000" required style="text-align: center; font-size: 1.5rem; letter-spacing: 0.5rem;">
+                    </div>
+                    
+                    <button type="submit" class="btn-primary">Confirmar</button>
+                </form>
+                
+                <div style="text-align: center; margin-top: 1rem;">
+                    <p style="color: #666;">Não recebeu o código?</p>
+                    <a href="#" onclick="alert('Código reenviado!')" style="color: #e91e63; text-decoration: none;">Reenviar código</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 SUPER. Todos os direitos reservados.</p>
+            <a href="terms.html">Termos de Uso</a>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html> 
